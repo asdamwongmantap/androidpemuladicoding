@@ -1,0 +1,18 @@
+package com.wongmantap.myviewandviews;
+
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+
+public class MainActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+//        ubah title bar
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().setTitle("News");
+        }
+    }
+}
