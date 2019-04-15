@@ -1,5 +1,6 @@
 package com.wongmantap.myintentapp;
 
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
@@ -26,6 +27,11 @@ public class MoveWithDataActivity extends AppCompatActivity {
         int age = getIntent().getIntExtra(EXTRA_AGE, 0);
         String text = "Name : " + name + ",\nYour Age : " + age;
         tvDataReceived.setText(text);
+
+        //untuk menambahkan panah back
+        ActionBar menu = getSupportActionBar();
+        menu.setDisplayHomeAsUpEnabled(true);
+        menu.setDisplayShowHomeEnabled(true);
     }
 
 }

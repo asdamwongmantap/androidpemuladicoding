@@ -17,7 +17,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".MoveActivity" />
-        <activity android:name=".MoveWithDataActivity" />
+        <!--untuk menambahkan panah back-->
+        <activity
+            android:name=".MoveWithDataActivity"
+            android:parentActivityName=".MainActivity"/>
         <activity android:name=".MoveWithObjectActivity"></activity>
     </application>
 
