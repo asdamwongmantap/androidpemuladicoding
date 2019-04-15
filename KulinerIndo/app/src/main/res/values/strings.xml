@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">KulinerIndo</string>
+    <string name="list">List</string>
+    <string name="grid">Grid</string>
+    <string name="with_cardview">with CardView</string>
+    <string name="share">share</string>
+    <string name="favorite">favorite</string>
+    <string name="data_received">data_received</string>
+    <string name="this_is_moveactivity">Ini MoveActivity</string>
+    <string name="data_name">data_name</string>
+    <string name="data_remarks">data_remarks</string>
+</resources>
