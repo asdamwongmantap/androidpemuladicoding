@@ -1,5 +1,6 @@
 package com.wongmantap.kulinerindo;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
@@ -22,6 +23,7 @@ public class MoveWithDataActivity extends AppCompatActivity {
 
     public static final String EXTRA_REMARKS = "extra_remarks";
     public static final String EXTRA_NAME = "extra_name";
+    public static final String EXTRA_PHOTO = "extra_photo";
 //    private RecyclerView rvCategory;
 //    private ArrayList<Kuliner> list = new java.util.ArrayList<>();
 //
@@ -49,15 +51,27 @@ public class MoveWithDataActivity extends AppCompatActivity {
 //        list.addAll(KulinerData.getListData());
 //        showRecyclerList();
 
+
+//        Kuliner kuliner = new Kuliner();
+//        kuliner = getIntent().getSerializableExtra("key");
+
         tvDataName = findViewById(R.id.tv_data_name);
         tvDataRemarks = findViewById(R.id.tv_data_remarks);
         tvDataPhotos = findViewById(R.id.tv_data_photos);
         String name = getIntent().getStringExtra(EXTRA_NAME);
         String remarks = getIntent().getStringExtra(EXTRA_REMARKS);
+        String imgPhotodetail = getIntent().getStringExtra(EXTRA_PHOTO);
+
         String textname = name ;
         String textremarks = remarks;
+
         tvDataName.setText(textname);
         tvDataRemarks.setText(textremarks);
+        Glide.with(this)
+                .load(imgPhotodetail)
+                .apply(new RequestOptions().override(550, 550))
+                .into(tvDataPhotos);
+
 
 //
 

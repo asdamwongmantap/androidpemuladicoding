@@ -92,6 +92,7 @@ public class MainActivity extends AppCompatActivity {
         moveWithDataIntent.putExtra(MoveWithDataActivity.EXTRA_NAME, kuliner.getName());
 //        moveWithDataIntent.putExtra(MoveWithDataActivity.EXTRA_AGE, 5);
         moveWithDataIntent.putExtra(MoveWithDataActivity.EXTRA_REMARKS, kuliner.getRemarks());
+        moveWithDataIntent.putExtra(MoveWithDataActivity.EXTRA_PHOTO, kuliner.getPhoto());
         startActivity(moveWithDataIntent);
     }
 }

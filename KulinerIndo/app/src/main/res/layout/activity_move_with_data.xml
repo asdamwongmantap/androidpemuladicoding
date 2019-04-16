@@ -9,8 +9,8 @@
     tools:context="com.wongmantap.kulinerindo.MoveWithDataActivity">
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/tv_data_photos"
-        android:layout_width="55dp"
-        android:layout_height="55dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:layout_marginRight="@dimen/activity_horizontal_margin"
         android:layout_marginEnd="@dimen/activity_horizontal_margin"
         tools:src="@android:color/darker_gray"/>
